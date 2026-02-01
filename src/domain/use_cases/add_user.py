@@ -1,0 +1,2 @@
+class AddUserUseCase:
+    pass
