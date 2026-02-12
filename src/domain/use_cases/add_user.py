@@ -1,2 +1,6 @@
+from src.domain.entities import User
+
+
 class AddUserUseCase:
-    pass
+    def execute(self) -> User:
+        return User()

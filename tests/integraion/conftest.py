@@ -1,7 +1,10 @@
 import punq
 import pytest
 
+from src.app.helpers import create_container
+
 
 @pytest.fixture()
 def container() -> punq.Container:
-    return punq.Container()
+    container = create_container()
+    return container
