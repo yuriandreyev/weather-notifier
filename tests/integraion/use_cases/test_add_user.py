@@ -7,6 +7,6 @@ def test_add_user_success(
 ) -> None:
     use_case = container.resolve(AddUserUseCase)
 
-    result = use_case.execute()
+    result = use_case.execute(user_name="Summer")
 
-    assert result == "some user entity"
+    assert result.name == "Summer"
